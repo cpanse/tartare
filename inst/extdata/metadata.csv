@@ -1,0 +1,2 @@
+"Title","Description","BiocVersion","Genome","SourceType","SourceUrl","SourceVersion","Species","TaxonomyId","Coordinate_1_based","DataProvider","Maintainer","RDataClass","DispatchClass","RDataPath","Tags","Notes"
+"LUMOS",".....","3.9",NA,"TXT","https://fgcz-bfabric.uzh.ch/bfabric/userlab/show-project.html?id=3181","Jul 20 2019",NA,NA,NA,"Functional Genomics Center Zurich (FGCZ)","Tobias Kockmann <Tobias.Kockmann@fgcz.ethz.ch>","blob.frame","FilePath","tartare/20190716_004_PierceHeLa.raw","","md5=055f6133b2e1c18fd33fa2c08fbaa8da;"
