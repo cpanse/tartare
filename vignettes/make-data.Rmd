@@ -17,7 +17,7 @@ vignette: |
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 bibliography:
-  - MsBackendRawFileReader.bib
+  - tartare.bib
 ---
 
 
@@ -42,8 +42,9 @@ aws --profile AnnotationContributor s3 cp NestLink s3://annotation-contributor/N
 load metadata
 
 ```{r eval=TRUE}
-fl <- system.file("extdata", "metadata.csv", package='tartare)
-kable(metadata <- read.csv(fl, stringsAsFactors=FALSE))
+#library(kable)
+fl <- system.file("extdata", "metadata.csv", package='tartare')
+(metadata <- read.csv(fl, stringsAsFactors=FALSE))
 ```
 
 query and load `r Biocpkg("NestLink")` package data from aws s3

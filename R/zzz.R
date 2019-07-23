@@ -11,11 +11,12 @@
 
 
 
-#' getExperimentHubFilename
+#' getExperimentHubFilename 
+#' 
 #'
 #' @param filename of the aws s3 blob.
 #' @return the file name of the local ExperimentHub.
-#' 
+#' @aliases tartare
 #' @export getExperimentHubFilename
 #' @importFrom AnnotationHub query
 #' @importFrom ExperimentHub ExperimentHub
@@ -30,7 +31,8 @@ getExperimentHubFilename <- function(filename){
    suppressMessages({
         eh = ExperimentHub()
     
-        filename <- query(eh, c("tartare", filename))[[1]]
+        # filename <- query(eh, c("tartare", filename))[[1]]
+        filename <- NULL
        })
     filename
 }
