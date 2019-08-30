@@ -17,7 +17,8 @@ Suggests:
 Description: contains example data recorded on Thermo Fischer LC-MS systems (LUMOS/HFX) in raw format as well as in mzXML format. 
   manifaltic set of scan types and aqqussision logics 
   but keeping the file size compact.
-  the goal is provide a huge varity of compact size for software developement and extende testing.
+  the goal is provide a huge varity of compact size for software developement and extende testing (this is why we names it tartare).
+  The  package is not thought to be used for classical mass spec analyses.
   The package is considered to be used with  the 
   rawDiag package (Trachsel, 2018 <doi:10.1021/acs.jproteome.8b00173>) and the Spectra MsBackends.
 URL: https://github.com/cpanse/tartare
