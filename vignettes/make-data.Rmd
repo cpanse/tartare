@@ -1,5 +1,5 @@
 ---
-title: "Howto use the tartare package?"
+title: "make-data for tartare?"
 author:
 - name: Christian Panse
   affiliation: Functional Genomics Center Zurich
@@ -7,7 +7,7 @@ author:
 - name: Tobias Kockmann
   affiliation: Functional Genomics Center Zurich
   email: tobias.Kockmann@fgcz.ethz.ch
-package: MsBackendRawFileReader
+package: tartare
 output:
   BiocStyle::html_document
 abstract: |
@@ -19,6 +19,16 @@ vignette: |
 bibliography:
   - tartare.bib
 ---
+
+# Sample description
+
+# Data recording
+
+## Q Exactive HF-X
+## Fushion Lumos
+
+# raw2mzML conversion
+
 
 
 # Make Data (replaces `make-data.R`)
