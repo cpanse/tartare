@@ -28,6 +28,8 @@ Pierce HeLa protein digest standard (#1862824, Thermo Scientific) in 3% ACN, 0.1
 
 ## Q Exactive HF-X
 
+
+
 ### LC
 
 200 ng sample were seperated on a linear gradient from 5 to 35% B in 20 min using a binary mobile phase composed of A) 0.1% FA in water, B) 0.1% FA in ACN. The stationary phase was ...
