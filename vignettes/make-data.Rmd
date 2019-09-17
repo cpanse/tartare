@@ -42,7 +42,7 @@ The MS acquision was started 18 min post sample injection and lastet only 4 min.
 - DIA
 
 
-__Method of Q Exactive HF-X__
+Method of Q Exactive HF-X
 
 Overall method settings
 
@@ -62,7 +62,7 @@ Dynamic Exclusion                                                          ―
 
                                   Experiments
 
-__Full MS / dd-MS² (TopN)__
+Full MS / dd-MS² (TopN)
 General
 Runtime                                                               0 to 1 min
 Polarity                                                            positive 
@@ -104,7 +104,7 @@ Exclude isotopes                                                          on
 Dynamic exclusion                                                       10.0 s
 If idle ..                                                do not pick others 
 
-__PRM__
+PRM
 General
 Runtime                                                               1 to 2 min
 Polarity                                                            positive 
@@ -126,7 +126,7 @@ Fixed first mass                                                           ―
 (N)CE / stepped (N)CE                                                nce: 35 
 Spectrum data type                                                  Centroid 
 
-__Full MS — SIM__
+Full MS — SIM
 General
 Runtime                                                               1 to 2 min
 Polarity                                                            positive 
@@ -141,7 +141,7 @@ Scan range 1                                                     150 to 1000 m/z
 Scan range 2                                                    1000 to 2000 m/z
 Spectrum data type                                                  Centroid 
 
-__Targeted-SIM__
+Targeted-SIM
 General
 Runtime                                                               2 to 3 min
 Polarity                                                            positive 
@@ -158,7 +158,7 @@ Isolation offset                                                         0.0 m/z
 Scan range                                                       150 to 2000 m/z
 Spectrum data type                                                  Centroid 
 
-__DIA__
+DIA
 General
 Runtime                                                               3 to 4 min
 Polarity                                                            positive 
@@ -178,7 +178,7 @@ Fixed first mass                                                       100.0 m/z
 (N)CE / stepped (N)CE                                                nce: 30 
 Spectrum data type                                                  Centroid 
 
-                                     __Setup__
+                                     Setup
 
 Tunefiles
 General
