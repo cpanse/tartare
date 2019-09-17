@@ -41,6 +41,7 @@ The MS acquision was started 18 min post sample injection and lastet only 4 min.
 - Targeted-SIM
 - DIA
 
+Experiment 2 and 3 were executed in parrallel! All method details are listed below.
 
 Method of Q Exactive HF-X
 
