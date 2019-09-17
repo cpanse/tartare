@@ -22,9 +22,259 @@ bibliography:
 
 # Sample description
 
+Pierce HeLa protein digest standard (#1862824, Thermo Scientific) in 3% ACN, 0.1% FA
+
 # Data recording
 
 ## Q Exactive HF-X
+
+### LC
+
+200 ng sample were seperated on a linear gradient from 5 to 35% B in 20 min using a binary mobile phase composed of A) 0.1% FA in water, B) 0.1% FA in ACN. The stationary phase was ...
+
+### MS
+
+The MS acquision was started 18 min post sample injection and lastet only 4 min. Be aware that spray voltage and source gas was turned on at 18.5 min (see Tunefiles section of the method). This means the first 30 s were recorded without ESI. In summary, 4 different experiments were recorded
+
+- Full MS / dd-MS² (TopN)
+- PRM
+- Targeted-SIM
+- DIA
+
+
+__Method of Q Exactive HF-X__
+
+Overall method settings
+
+Global Settings
+Use lock masses                                                         best 
+Lock mass injection                                                        ― 
+Chrom. peak width (FWHM)                                                  15 s
+Time
+Method duration                                                         4.00 min
+Customized Tolerances (+/-)
+Lock Masses                                                                ― 
+Inclusion                                                                  ― 
+Exclusion                                                                  ― 
+Neutral Loss                                                               ― 
+Mass Tags                                                                  ― 
+Dynamic Exclusion                                                          ― 
+
+                                  Experiments
+
+__Full MS / dd-MS² (TopN)__
+General
+Runtime                                                               0 to 1 min
+Polarity                                                            positive 
+In-source CID                                                            0.0 eV
+Default charge state                                                       2 
+Inclusion                                                                  ― 
+Exclusion                                                                  ― 
+Tags                                                                       ― 
+Full MS
+Microscans                                                                 1 
+Resolution                                                           120,000 
+AGC target                                                               3e6 
+Maximum IT                                                               100 ms
+Number of scan ranges                                                      1 
+Scan range                                                       200 to 2000 m/z
+Spectrum data type                                                  Centroid 
+dd-MS² / dd-SIM
+Microscans                                                                 1 
+Resolution                                                            30,000 
+AGC target                                                               1e5 
+Maximum IT                                                                50 ms
+Loop count                                                                 5 
+MSX count                                                                  1 
+TopN                                                                       5 
+Isolation window                                                         1.4 m/z
+Isolation offset                                                         0.0 m/z
+Scan range                                                       200 to 2000 m/z
+Fixed first mass                                                           ― 
+(N)CE / stepped (N)CE                                                nce: 30 
+Spectrum data type                                                  Centroid 
+dd Settings
+Minimum AGC target                                                    8.00e3 
+Intensity threshold                                                    1.6e5 
+Apex trigger                                                               ― 
+Charge exclusion                                    unassigned, 1, 5 - 8, >8 
+Multiple charge states                                                   all 
+Peptide match                                                      preferred 
+Exclude isotopes                                                          on 
+Dynamic exclusion                                                       10.0 s
+If idle ..                                                do not pick others 
+
+__PRM__
+General
+Runtime                                                               1 to 2 min
+Polarity                                                            positive 
+In-source CID                                                            0.0 eV
+Dynamic RT                                                               off 
+Default charge state                                                       2 
+Inclusion                                                                 on 
+MS²
+Microscans                                                                 1 
+Resolution                                                            30,000 
+AGC target                                                               2e5 
+Maximum IT                                                               100 ms
+Loop count                                                                11 
+MSX count                                                                  1 
+MSX isochronous ITs                                                       on 
+Isolation window                                                         4.0 m/z
+Isolation offset                                                         0.0 m/z
+Fixed first mass                                                           ― 
+(N)CE / stepped (N)CE                                                nce: 35 
+Spectrum data type                                                  Centroid 
+
+__Full MS — SIM__
+General
+Runtime                                                               1 to 2 min
+Polarity                                                            positive 
+In-source CID                                                            0.0 eV
+Full MS — SIM
+Microscans                                                                 1 
+Resolution                                                           120,000 
+AGC target                                                               3e6 
+Maximum IT                                                               200 ms
+Number of scan ranges                                                      2 
+Scan range 1                                                     150 to 1000 m/z
+Scan range 2                                                    1000 to 2000 m/z
+Spectrum data type                                                  Centroid 
+
+__Targeted-SIM__
+General
+Runtime                                                               2 to 3 min
+Polarity                                                            positive 
+In-source CID                                                            0.0 eV
+Inclusion                                                                 on 
+SIM
+Microscans                                                                 1 
+Resolution                                                           240,000 
+AGC target                                                               5e4 
+Maximum IT                                                               200 ms
+MSX count                                                                  5 
+Isolation window                                                         4.0 m/z
+Isolation offset                                                         0.0 m/z
+Scan range                                                       150 to 2000 m/z
+Spectrum data type                                                  Centroid 
+
+__DIA__
+General
+Runtime                                                               3 to 4 min
+Polarity                                                            positive 
+In-source CID                                                            0.0 eV
+Default charge state                                                       2 
+DIA
+Microscans                                                                 1 
+Resolution                                                            30,000 
+AGC target                                                               1e6 
+Maximum IT                                                              auto 
+Loop count                                                                11 
+MSX count                                                                  1 
+MSX isochronous ITs                                                       on 
+Isolation window                                                        20.0 m/z
+Isolation offset                                                         0.0 m/z
+Fixed first mass                                                       100.0 m/z
+(N)CE / stepped (N)CE                                                nce: 30 
+Spectrum data type                                                  Centroid 
+
+                                     __Setup__
+
+Tunefiles
+General
+Switch Count  2
+Base Tunefile C:\Xcalibur\methods\nogas_novoltage_nano.mstune
+Element 1
+At            0.50 min
+New Tunefile  C:\Xcalibur\methods\default_nano.mstune
+Element 2
+At            34.50 min
+New Tunefile  C:\Xcalibur\methods\nogas_novoltage_nano.mstune
+
+Contact Closure
+General
+Used              True 
+Start in Closed  False 
+Switch Count         2 
+Element 1
+At                0.50 min
+Switches to       Open 
+Element 2
+At               34.50 min
+Switches to     Closed 
+
+Syringe
+General
+Used                  False 
+Start in OFF           True 
+Stop at end of run    False 
+Switch Count              0 
+Pump setup
+Syringe type       Hamilton 
+Flow rate             3.000 µL/min
+Inner diameter        2.303 mm
+Volume                  250 µL
+
+Divert Valve A
+General
+Used         False 
+Start in 1-2  True 
+Switch Count     0 
+
+Divert Valve B
+General
+Used         False 
+Start in 1-2  True 
+Switch Count     0 
+
+Lock Masses
+    2 entries
+     Mass Polarity Start   End Comment
+    [m/z]          [min] [min] 
+371.10124 Positive             
+445.12002 Positive             
+
+Inclusion List
+    16 entries
+     Mass Formula Species  CS Polarity Start   End (N)CE MSX ID Comment
+    [m/z]     [M]         [z]          [min] [min]              
+487.25671                   2 Positive  1.00  3.00    28        LGGNEQVTR
+                                                                (light)
+644.82261                   2 Positive  1.00  3.00    28        GAGSSEPVTGLDAK
+                                                                (light)
+683.82789                   2 Positive  1.00  3.00    28        VEATFGVDESNAK
+                                                                (light)
+547.29804                   2 Positive  1.00  3.00    28        YILAGVENSK
+                                                                (light)
+669.83806                   2 Positive  1.00  3.00    28        TPVISGGPYEYR
+                                                                (light)
+683.85371                   2 Positive  1.00  3.00    28        TPVITGAPYEYR
+                                                                (light)
+699.33842                   2 Positive  1.00  3.00    28        DGLDAASYYAPVR
+                                                                (light)
+726.83571                   2 Positive  1.00  3.00    28        ADVTPADFSEWSK
+                                                                (light)
+622.85351                   2 Positive  1.00  3.00    28        GTFIIDPGGVIR
+                                                                (light)
+636.86916                   2 Positive  1.00  3.00    28        GTFIIDPAAVIR
+                                                                (light)
+776.92975                   2 Positive  1.00  3.00    28        LFLQFGAQGSPFLK
+                                                                (light)
+410.00000                   2 Positive  3.00  4.00    28        window1
+430.00000                   2 Positive  3.00  4.00    28        window2
+450.00000                   2 Positive  3.00  4.00    28        window3
+470.00000                   2 Positive  3.00  4.00    28        window4
+490.00000                   2 Positive  3.00  4.00    28        window5
+
+Exclusion List
+   (no entries)
+
+Neutral Losses
+   (no entries)
+
+Mass Tags
+   (no entries)
+
 ## Fushion Lumos
 
 # raw2mzML conversion
