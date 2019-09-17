@@ -28,7 +28,7 @@ Pierce HeLa protein digest standard (#1862824, Thermo Scientific) in 3% ACN, 0.1
 
 ## Q Exactive HF-X
 
-
+file name: 20190710_003_PierceHeLaProteinDigestStd.raw
 
 ### LC
 
