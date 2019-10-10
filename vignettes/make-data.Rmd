@@ -827,9 +827,15 @@ Source Fragmentation:   Disabled
 Scan Description:
 ```
 
-# raw2mzML conversion
+# mzXML conversion
 
+proteowizard, default options. ProteoWizard release: 3.0.10200 (2016-11-17) ProteoWizard MSData: 3.0.10200 (2016-11-17) ProteoWizard Analysis: 3.0.10112 (2016-10-19) Build date: Nov 17 2016 10:59:56 
 
+[msconvert wrapper](https://github.com/fgcz/PyFGCZ/blob/python3/fgcz/scripts/fgcz_mzXML.bat) using [fcc rule](http://fgcz-ms.uzh.ch/config/fcc_config.xml#converterID-81)
+```{bat}
+
+"C:\Program Files (x86)\ProteoWizard\ProteoWizard 3.0.10200\msconvert" %1 --mzXML -z -o %~dp1\msconvert_mzXML
+```
 
 # Make Data (replaces `make-data.R`)
 
