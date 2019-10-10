@@ -1,5 +1,5 @@
 ---
-title: "make-data for tartare?"
+title: "make-data"
 author:
 - name: Christian Panse
   affiliation: Functional Genomics Center Zurich
@@ -11,9 +11,17 @@ package: tartare
 output:
   BiocStyle::html_document
 abstract: |
-  The tartare package provides raw files recorded on different Liquid Chromatography Mass Spectrometry (LC-MS) instruments. All included MS instruments are manufactured by Thermo Fisher Scientific and belong to the Orbitrap Tribrid or Q Exactive Orbitrap family of instruments. Despite their common origin and shared hardware components (e.g. Orbitrap mass analyser), the above instruments tend to write data in different "dialects" in a shared binary file format (.raw). The intention behind tartare is to provide complex but slim real-world files that can be used to make code robust with respect to this diversity. In other words, it is intended for enhanced unit testing.
+  The tartare package provides raw files recorded on different Liquid
+  Chromatography Mass Spectrometry (LC-MS) instruments. All included MS
+  instruments are manufactured by Thermo Fisher Scientific and belong to the
+  Orbitrap Tribrid or Q Exactive Orbitrap family of instruments. Despite their
+  common origin and shared hardware components (e.g. Orbitrap mass analyser),
+  the above instruments tend to write data in different "dialects" in a shared
+  binary file format (.raw). The intention behind tartare is to provide complex
+  but slim real-world files that can be used to make code robust with respect
+  to this diversity. In other words, it is intended for enhanced unit testing.
 vignette: |
-  %\VignetteIndexEntry{Howto use the package?}
+  %\VignetteIndexEntry{make-data}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 bibliography:
@@ -22,7 +30,8 @@ bibliography:
 
 # Sample description
 
-Pierce HeLa protein digest standard (#1862824, Thermo Scientific) in 3% ACN, 0.1% FA
+Pierce HeLa protein digest standard (#1862824, Thermo Scientific) in 3% ACN,
+0.1% FA
 
 # Data recording
 
@@ -32,11 +41,13 @@ file name: `20190710_003_PierceHeLaProteinDigestStd.raw`
 
 ### LC
 
-200 ng sample were seperated on a linear gradient from 5 to 35% B in 20 min using a binary mobile phase composed of A) 0.1% FA in water, B) 0.1% FA in ACN. The stationary phase was ...
+200 ng sample were seperated on a linear gradient from 5 to 35% B in 20 min
+using a binary mobile phase composed of A) 0.1% FA in water, B) 0.1% FA in ACN. The stationary phase was ...
 
 ### MS
 
-The MS acquision was started 18 min post sample injection and lastet only 4 min. Be aware that spray voltage and source gas was turned on at 18.5 min (see Tunefiles section of the method). This means the first 30 s were recorded without ESI. In summary, 4 different experiments were recorded
+The MS acquision was started 18 min post sample injection and lastet only 4 min. Be aware that spray voltage and source gas was turned on at 18.5 min (see Tunefiles section of the method). This means the first 30 s were recorded
+without ESI. In summary, 4 different experiments were recorded
 
 * Full MS / dd-MS² (TopN)
 * PRM
@@ -286,7 +297,8 @@ file name:  `20190716_004_PierceHeLa.raw`
 
 ### LC
 
-200 ng sample were seperated on a linear gradient from 5 to 35% B in 20 min using a binary mobile phase composed of A) 0.1% FA in water, B) 0.1% FA in ACN. The stationary phase was ...
+200 ng sample were seperated on a linear gradient from 5 to 35% B in 20 min
+using a binary mobile phase composed of A) 0.1% FA in water, B) 0.1% FA in ACN. The stationary phase was ...
 
 ### MS
 
@@ -829,20 +841,28 @@ Scan Description:
 
 # mzXML conversion
 
-proteowizard, default options. ProteoWizard release: 3.0.10200 (2016-11-17) ProteoWizard MSData: 3.0.10200 (2016-11-17) ProteoWizard Analysis: 3.0.10112 (2016-10-19) Build date: Nov 17 2016 10:59:56 
+The mzXML files were produced by using
+proteowizard software using the below-listed wrapper script.
 
-[msconvert wrapper](https://github.com/fgcz/PyFGCZ/blob/python3/fgcz/scripts/fgcz_mzXML.bat) using [fcc rule](http://fgcz-ms.uzh.ch/config/fcc_config.xml#converterID-81)
 ```{bat}
 
 "C:\Program Files (x86)\ProteoWizard\ProteoWizard 3.0.10200\msconvert" %1 --mzXML -z -o %~dp1\msconvert_mzXML
 ```
 
+
+The software versions are:
+
+|    software          |    release              |
+|:---------------------|:------------------------|
+|ProteoWizard          | 3.0.10200 (2016-11-17)  |
+|ProteoWizard MSData   | 3.0.10200 (2016-11-17)  |
+|ProteoWizard Analysis | 3.0.10112 (2016-10-19)  |
+|Build date:           | Nov 17 2016 10:59:56    |
+
 # Make Data (replaces `make-data.R`)
 
-
-
-
 # Uploading to S3
+
 ```
 #!/bin/bash
 
@@ -886,4 +906,3 @@ Here is the compiled output of `sessionInfo()`:
 sessionInfo()
 ```
 
-# References

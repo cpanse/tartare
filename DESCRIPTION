@@ -1,33 +1,38 @@
 Package: tartare
 Type: Package
-Title: ThermoFinnigan sample raw data
+Title: Raw ground spectra recorded on Thermo Fisher Scientific mass spectrometers
 Version: 0.0.1
-Authors@R: c(person(given = "Christian",
-    family = "Panse", email = "cp@fgcz.ethz.ch", role = c("aut", "cre"),
+Authors@R: c(person(given = "Christian", family = "Panse",
+    email = "cp@fgcz.ethz.ch", role = c("aut", "cre"),
     comment = c(ORCID = "0000-0003-1975-3064")),
-	person(given = "Tobias", family = "Kockmann",
-	  email = "Tobias.Kockmann@fgcz.ethz.ch", role = "aut", 
+    person(given = "Tobias", family = "Kockmann",
+    email = "Tobias.Kockmann@fgcz.ethz.ch", role = "aut", 
     comment = c(ORCID = "0000-0002-1847-885X")))
 Depends: R (>= 3.6),
     AnnotationHub (>= 2.16),
-    ExperimentHub (>= 1.0),
+    ExperimentHub (>= 1.0)
 Suggests:
     knitr,
     testthat
-Description: contains example data recorded on Thermo Fischer LC-MS systems (LUMOS/HFX) in raw format as well as in mzXML format. 
-  manifaltic set of scan types and aqqussision logics 
-  but keeping the file size compact.
-  the goal is provide a huge varity of compact size for software developement and extende testing (this is why we names it tartare).
-  The  package is not thought to be used for classical mass spec analyses.
-  A detailed describtion iof the data aquissision is provided in the vignette.
-  The package is considered to be used with  the 
-  rawDiag package (Trachsel, 2018 <doi:10.1021/acs.jproteome.8b00173>) and the Spectra MsBackends.
+Description: provides raw files recorded on different Liquid
+  Chromatography Mass Spectrometry (LC-MS) instruments. All included MS
+  instruments are manufactured by Thermo Fisher Scientific and belong to the
+  Orbitrap Tribrid or Q Exactive Orbitrap family of instruments. Despite their
+  common origin and shared hardware components (e.g. Orbitrap mass analyser),
+  the above instruments tend to write data in different "dialects" in a shared
+  binary file format (.raw). The intention behind tartare is to provide complex
+  but slim real-world files that can be used to make code robust with respect
+  to this diversity. In other words, it is intended for enhanced unit testing.
+  The package is considered to be used with the
+  rawDiag package (Trachsel, 2018 <doi:10.1021/acs.jproteome.8b00173>) and the
+  Spectra MsBackends.
 URL: https://github.com/cpanse/tartare
 BugReports: https://github.com/cpanse/tartare/issues
 Encoding: UTF-8
 NeedsCompilation: no
-biocViews: biocViews: ExperimentHub, ExperimentData, Proteomics, MassSpectrometryData
-RoxygenNote: 6.1.1
+biocViews: biocViews: ExperimentHub, ExperimentData, Proteomics,
+    MassSpectrometryData
+RoxygenNote: 6.1
 License: GPL-3
 VignetteBuilder: knitr
 Collate: 
