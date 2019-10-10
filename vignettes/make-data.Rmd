@@ -38,13 +38,14 @@ file name: 20190710_003_PierceHeLaProteinDigestStd.raw
 
 The MS acquision was started 18 min post sample injection and lastet only 4 min. Be aware that spray voltage and source gas was turned on at 18.5 min (see Tunefiles section of the method). This means the first 30 s were recorded without ESI. In summary, 4 different experiments were recorded
 
-- Full MS / dd-MS² (TopN)
-- PRM
-- Targeted-SIM
-- DIA
+* Full MS / dd-MS² (TopN)
+* PRM
+* Targeted-SIM
+* DIA
 
 Experiment 2 and 3 were executed in parrallel! All method details are listed below.
 
+```{txt}
 Method of Q Exactive HF-X
 
 Overall method settings
@@ -277,6 +278,7 @@ Neutral Losses
 
 Mass Tags
    (no entries)
+```
 
 ## Fushion Lumos
 
@@ -296,6 +298,7 @@ The MS acquision was started directly after sample injection and lastet for 35 m
 
 Exp. #5 (MS) was executed the entire method duration! Method details are listed below.
 
+```{txt}
 Method Summary
 
 Method Settings
@@ -820,6 +823,8 @@ Data Type:   Centroid
 Polarity:   Positive
 Source Fragmentation:   Disabled
 Scan Description:
+```
+
 # raw2mzML conversion
 
 
