@@ -867,10 +867,13 @@ The software versions are:
 # Uploading to S3
 
 ```
-#!/bin/bash
-
-# t.b.d.
+cp@fgcz-148:~ > aws --profile AnnotationContributor s3 cp tartare s3://annotation-contributor/tartare --recursive --acl public-read
+upload: tartare/20190710_003_PierceHeLaProteinDigestStd.mzXML to s3://annotation-contributor/tartare/20190710_003_PierceHeLaProteinDigestStd.mzXML
+upload: tartare/20190710_003_PierceHeLaProteinDigestStd.raw to s3://annotation-contributor/tartare/20190710_003_PierceHeLaProteinDigestStd.raw
+upload: tartare/20190716_004_PierceHeLa.mzXML to s3://annotation-contributor/tartare/20190716_004_PierceHeLa.mzXML
+upload: tartare/20190716_004_PierceHeLa.raw to s3://annotation-contributor/tartare/20190716_004_PierceHeLa.raw
 ```
+
 # Overview/Getting started using Bioconductor `r Biocpkg("ExperimentHub")`
 
 load metadata
