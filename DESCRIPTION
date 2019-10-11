@@ -17,7 +17,7 @@ Imports:
 Suggests:
     knitr,
     testthat
-Description: provides raw files (size=215MBytes)recorded on different Liquid
+Description: provides raw files (size=215MBytes) recorded on different Liquid
   Chromatography Mass Spectrometry (LC-MS) instruments. All included MS
   instruments are manufactured by Thermo Fisher Scientific and belong to the
   Orbitrap Tribrid or Q Exactive Orbitrap family of instruments. Despite their
