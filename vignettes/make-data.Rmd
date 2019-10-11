@@ -866,22 +866,24 @@ The software versions are:
 ```
 #!/bin/bash
 
-aws --profile AnnotationContributor s3 cp NestLink/F255744.RData s3://annotation-contributor/NestLink/F255744.RData --acl public-read
+aws --profile AnnotationContributor s3 cp tartare/F255744.RData s3://annotation-contributor/NestLink/F255744.RData --acl public-read
 
-aws --profile AnnotationContributor s3 cp NestLink/WU160118.RData s3://annotation-contributor/NestLink/WU160118.RData --acl public-read
+aws --profile AnnotationContributor s3 cp tartare/WU160118.RData s3://annotation-contributor/tartare/WU160118.RData --acl public-read
 
-aws --profile AnnotationContributor s3 cp NestLink s3://annotation-contributor/NestLink --recursive --acl public-read
+aws --profile AnnotationContributor s3 cp NestLink s3://annotation-contributor/tartare --recursive --acl public-read
 
 ```
 # Overview/Getting started using Bioconductor `r Biocpkg("ExperimentHub")`
 
 load metadata
 
+
 ```{r eval=TRUE}
-#library(kable)
+library(knitr)
 fl <- system.file("extdata", "metadata.csv", package='tartare')
-(metadata <- read.csv(fl, stringsAsFactors=FALSE))
+kable(metadata <- read.csv(fl, stringsAsFactors=FALSE))
 ```
+
 
 query and load `r Biocpkg("NestLink")` package data from aws s3
 

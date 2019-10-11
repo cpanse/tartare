@@ -1,5 +1,6 @@
 #R
 
+#' @importFrom utils packageVersion
 .onAttach <- function(lib, pkg) {
     if (interactive()) {
         version <- packageVersion('tartare')
@@ -11,7 +12,7 @@
 
 #' getExperimentHubFilename 
 #' 
-#'
+#' @author Christian Panse <cp@fgcz.ethz.ch>, 2019
 #' @param filename of the aws s3 blob.
 #' @return the file name of the local ExperimentHub.
 #' @aliases tartare
