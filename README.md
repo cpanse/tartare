@@ -6,7 +6,7 @@ raw file collection recorded on Thermo Fisher Scientific mass spectrometers for 
 
 the following usage example requires the following packages:
 
-1. https://github.com:rformassspectrometry/Spectra
+1. https://github.com/rformassspectrometry/Spectra
 2. https://github.com/cpanse/MsBackendRawFileReader
 
 ## usage
