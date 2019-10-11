@@ -46,7 +46,9 @@ using a binary mobile phase composed of A) 0.1% FA in water, B) 0.1% FA in ACN. 
 
 ### MS
 
-The MS acquision was started 18 min post sample injection and lastet only 4 min. Be aware that spray voltage and source gas was turned on at 18.5 min (see Tunefiles section of the method). This means the first 30 s were recorded
+The MS acquision was started 18 min post sample injection and lastet only 4 min. Be aware that spray
+voltage and source gas was turned on at 18.5 min (see Tunefiles section of the method).
+This means the first 30 s were recorded
 without ESI. In summary, 4 different experiments were recorded
 
 * Full MS / dd-MS² (TopN)
@@ -302,7 +304,8 @@ using a binary mobile phase composed of A) 0.1% FA in water, B) 0.1% FA in ACN. 
 
 ### MS
 
-The MS acquision was started directly after sample injection and lastet for 35 min. In summary, 5 different experiments were recorded:
+The MS acquision was started directly after sample injection and lastet for 35 min.
+In summary, 5 different experiments were recorded:
 
 * Exp. 1 Orbitrap HCD - High Load (greater than 500 ng)
 * Exp. 2 ETD Data-Dependent Decision Tree
@@ -866,12 +869,7 @@ The software versions are:
 ```
 #!/bin/bash
 
-aws --profile AnnotationContributor s3 cp tartare/F255744.RData s3://annotation-contributor/NestLink/F255744.RData --acl public-read
-
-aws --profile AnnotationContributor s3 cp tartare/WU160118.RData s3://annotation-contributor/tartare/WU160118.RData --acl public-read
-
-aws --profile AnnotationContributor s3 cp NestLink s3://annotation-contributor/tartare --recursive --acl public-read
-
+# t.b.d.
 ```
 # Overview/Getting started using Bioconductor `r Biocpkg("ExperimentHub")`
 
