@@ -2,6 +2,10 @@
 raw file collection recorded on Thermo Fisher Scientific mass spectrometers for extented unit testing
 
 
+## requires
+1. https://github.com:rformassspectrometry/Spectra
+2. https://github.com/cpanse/MsBackendRawFileReader
+
 ## usage
 
 ```
