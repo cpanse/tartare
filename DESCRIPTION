@@ -2,7 +2,7 @@ Package: tartare
 Type: Package
 Title: Raw ground spectra recorded on Thermo Fisher Scientific mass
     spectrometers
-Version: 0.99.0
+Version: 0.99.1
 Authors@R: c(person(given = "Christian", family = "Panse",
     email = "Christian.Panse@gmail.com", role = c("aut", "cre"),
     comment = c(ORCID = "0000-0003-1975-3064")),
