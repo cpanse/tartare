@@ -20,6 +20,9 @@ abstract: |
   binary file format (.raw). The intention behind tartare is to provide complex
   but slim real-world files that can be used to make code robust with respect
   to this diversity. In other words, it is intended for enhanced unit testing.
+  The package is considered to be used with the
+  `r Githubpkg("fgcz/rawDiag")` package [@Trachsel2018] and the
+  `r Githubpkg("rformassspectrometry/Spectra")` MsBackends.
 vignette: |
   %\VignetteIndexEntry{make-data}
   %\VignetteEngine{knitr::rmarkdown}
@@ -911,3 +914,4 @@ Here is the compiled output of `sessionInfo()`:
 sessionInfo()
 ```
 
+#References
