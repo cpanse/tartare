@@ -855,12 +855,12 @@ proteowizard software using the below-listed wrapper script.
 
 The software versions are:
 
-|    software          |    release              |
-|:---------------------|:------------------------|
-|ProteoWizard          | 3.0.10200 (2016-11-17)  |
-|ProteoWizard MSData   | 3.0.10200 (2016-11-17)  |
-|ProteoWizard Analysis | 3.0.10112 (2016-10-19)  |
-|Build date:           | Nov 17 2016 10:59:56    |
+|software release      | Q Exactive HF-X         |  Fusion Lumos        |
+|:---------------------|:------------------------|:---------------------|
+|ProteoWizard          | 3.0.10200 (2016-11-17)  |  3.0.18109-390173050 |
+|ProteoWizard MSData   | 3.0.10200 (2016-11-17)  |                      |
+|ProteoWizard Analysis | 3.0.10112 (2016-10-19)  |                      |
+|Build date:           | Nov 17 2016 10:59:56    |                      |
 
 # Make Data (replaces `make-data.R`)
 
@@ -879,16 +879,16 @@ upload: tartare/20190716_004_PierceHeLa.raw to s3://annotation-contributor/tarta
 load metadata
 
 
-```{r eval=TRUE}
+```{r eval=TRUE, echo=FALSE}
 library(knitr)
 fl <- system.file("extdata", "metadata.csv", package='tartare')
-kable(metadata <- read.csv(fl, stringsAsFactors=FALSE))
+metadata <- read.csv(fl, stringsAsFactors=FALSE)
+kable(metadata[,c(1,5,15,17)])
 ```
-
 
 query and load `r Biocpkg("NestLink")` package data from aws s3
 
-```{r echo=TRUE, message=FALSE, warning=FALSE, eval=FALSE}
+```{r echo=TRUE, message=FALSE, warning=FALSE, eval=TRUE}
 library(ExperimentHub)
 
 eh <- ExperimentHub(); 
