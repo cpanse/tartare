@@ -887,7 +887,7 @@ metadata <- read.csv(fl, stringsAsFactors=FALSE)
 
 ```{r eval=TRUE, echo=FALSE}
 library(knitr)
-kable(metadata[,c(1,5,15,17)])
+kable(metadata[,c(1,5,15,16)])
 ```
 
 query and load `r Biocpkg("tartare")` package data from aws s3
