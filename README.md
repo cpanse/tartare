@@ -23,6 +23,11 @@ the following usage example requires the following packages:
 1. https://github.com/rformassspectrometry/Spectra
 2. https://github.com/cpanse/MsBackendRawFileReader
 
+
+![schema](https://user-images.githubusercontent.com/4901987/67311128-4a2fdf80-f4ff-11e9-8db2-49340d69f563.jpg)
+by courtesy of [@jorainer](https://github.com/jorainer)
+
+
 ## usage
 
 taken from the help pages `?tartare`.
