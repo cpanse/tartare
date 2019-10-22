@@ -2,11 +2,10 @@
 
 
 library("testthat")
-#library("tartare")
+library("tartare")
 
 library("tools")
 
-library("ExperimentHub")
-
+#library("ExperimentHub")
 
 test_check("tartare")
