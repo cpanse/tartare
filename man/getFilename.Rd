@@ -47,6 +47,9 @@ x <- .cnew ("Rawfile", hfx.filename)
 x$GetInfoValues()
 }
 }
+\seealso{
+\code{browseVignettes('tartare')}
+}
 \author{
 Christian Panse <cp@fgcz.ethz.ch>
 }

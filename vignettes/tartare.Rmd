@@ -21,15 +21,20 @@ abstract: |
   but slim real-world files that can be used to make code robust with respect
   to this diversity. In other words, it is intended for enhanced unit testing.
   The package is considered to be used with the
-  `r Githubpkg("fgcz/rawDiag")` package [@Trachsel2018] and the
-  `r Githubpkg("rformassspectrometry/Spectra")` MsBackends.
-vignette: |
-  %\VignetteIndexEntry{make-data}
+  "*[rawDiag](https://github.com/fgcz/rawDiag)*" package [@Trachsel2018] and the
+  "*[Spectra](https://github.com/rformassspectrometry/Spectra)*" MsBackends.
+vignette: >
+  %\VignetteIndexEntry{make and use tartare data}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 bibliography:
   - tartare.bib
 ---
+
+
+```{r initial, echo=FALSE, warning=FALSE, message=FALSE}
+library(BiocStyle)
+```
 
 # Sample description
 

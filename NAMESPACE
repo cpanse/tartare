@@ -2,5 +2,4 @@
 
 export(getFilename)
 importFrom(AnnotationHub,query)
-importFrom(base,library)
 importFrom(utils,packageVersion)

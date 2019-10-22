@@ -28,10 +28,10 @@ the following usage example requires the following packages:
 taken from the help pages `?tartare`.
 
 ```
-library(MsBackendRawFileReader)
 library(tartare)
 
 library(ExperimentHub)
+
 eh <- ExperimentHub()
 (files <- getFilename(eh))
 

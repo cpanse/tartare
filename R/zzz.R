@@ -1,6 +1,6 @@
 #R
 
-#' @importFrom base library
+
 #' @importFrom utils packageVersion
 .onAttach <- function(lib, pkg) {
     if (interactive()) {
