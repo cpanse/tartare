@@ -11,36 +11,35 @@ the following usage example requires the following packages:
 
 ## usage
 
+taken from the help pages `?tartare`.
+
 ```
-R> library(MsBackendRawFileReader)
-R> library(tartare)
+library(MsBackendRawFileReader)
+library(tartare)
 
-R> lumos.filename <- file.path(path.expand("~"),
-                            "tartare_data/20190710_003_PierceHeLaProteinDigestStd.raw")
+library(ExperimentHub)
+eh <- ExperimentHub()
+(files <- getFilename(eh))
 
-R> hfx.filename <- file.path(path.expand("~"),
-                          "tartare_data/20190716_004_PierceHeLa.raw")
+## Not run: 
+library(MsBackendRawFileReader)
 
+be <- lapply(files, function(f){
+if (grepl("mzXML$", f))
+    backendInitialize(MsBackendMzR(), files = f)
+else
+    backendInitialize(MsBackendRawFileReader(), files = f, extra=FALSE)
+})
 
-R> be <- backendInitialize(MsBackendRawFileReader(), files = c(hfx.filename,lumos.filename), extra=FALSE)
-R> S <- Spectra(be)
+be
+## End(Not run)
 
+## Not run: 
 
-R> S
-MSn data (Spectra) with 10619 spectra in a MsBackendRawFileReader backend:
-filename:	/Users/cp/tartare_data/20190716_004_PierceHeLa.raw
-creation date:	7/16/2019 5:56:24 PM
-first scan:	1
-last scan:	8742
-model:	Orbitrap Fusion Lumos 
+hfx.filename <- .query(eh, c('tartar', '20190710_003_PierceHeLaProteinDigestStd.raw'))
+x <- .cnew ("Rawfile", hfx.filename)
+x$GetInfoValues()
 
-filename:	/Users/cp/tartare_data/20190710_003_PierceHeLaProteinDigestStd.raw
-creation date:	7/11/2019 11:04:01 AM
-first scan:	1
-last scan:	1877
-model:	Q Exactive HF-X Orbitrap 
+## End(Not run)
 
-Processing:
-  
-R> 
 ```

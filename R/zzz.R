@@ -12,8 +12,12 @@
 
 
 
-#' Title
+#' get packages files
 #'
+#' calls the  \link[AnnotationHub]{query} method of an
+#' \link[ExperimentHub]{ExperimentHub} 
+#' objectquery and returns the local filenames.
+#' Of note: for proprietary reasons, a symbolic link is set to the cached files.
 #' @param eh ExperimentHub object.
 #' @param query a query string, e.g.,
 #' \code{c('tartar', '20190710_003_PierceHeLaProteinDigestStd.raw')}
@@ -21,6 +25,7 @@
 #' @return returns file contained in the tartare package
 #' @export getFilename
 #' @author Christian Panse <cp@fgcz.ethz.ch>
+#' @aliases tartare
 #'
 #' @examples 
 #' library(ExperimentHub)

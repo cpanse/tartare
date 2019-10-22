@@ -2,7 +2,8 @@
 % Please edit documentation in R/zzz.R
 \name{getFilename}
 \alias{getFilename}
-\title{Title}
+\alias{tartare}
+\title{get packages files}
 \usage{
 getFilename(eh, query = c("tartare"))
 }
@@ -16,7 +17,10 @@ getFilename(eh, query = c("tartare"))
 returns file contained in the tartare package
 }
 \description{
-Title
+calls the  \link[AnnotationHub]{query} method of an
+\link[ExperimentHub]{ExperimentHub} 
+objectquery and returns the local filenames.
+Of note: for proprietary reasons, a symbolic link is set to the cached files.
 }
 \examples{
 library(ExperimentHub)

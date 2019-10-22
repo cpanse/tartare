@@ -15,7 +15,8 @@ Depends: R (>= 3.6),
 Imports:
     utils
 Suggests:
-    knitr
+    knitr,
+    tools
 Description: provides raw files (size=278MBytes) recorded on different Liquid
   Chromatography Mass Spectrometry (LC-MS) instruments. All included MS
   instruments are manufactured by Thermo Fisher Scientific and belong to the
