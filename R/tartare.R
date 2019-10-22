@@ -6,8 +6,8 @@
 #' calls the  \link[AnnotationHub]{query} method of an
 #' \link[ExperimentHub]{ExperimentHub} 
 #' objectquery and returns the local filenames.
-#' Of note: for proprietary reasons, a symbolic link is set to the cached files.
-#' The overall file size is 
+#' Of note: for proprietary reasons, a \link[base]{file.link} is
+#' set to the cached files. The overall file size is 285MB.
 #' @param eh ExperimentHub object.
 #' @param query a query string, e.g.,
 #' \code{c('tartar', '20190710_003_PierceHeLaProteinDigestStd.raw')}
@@ -51,7 +51,7 @@ getFilename <- function(eh, query=c("tartare")){
         f.ext <- paste(f, sourcetype, sep='.')
         
         if (isFALSE(file.exists(f.ext))){
-            file.symlink(f, f.ext)
+            file.link(f, f.ext)
         }
         as.character(f.ext)
         

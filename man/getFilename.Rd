@@ -20,8 +20,8 @@ returns file contained in the tartare package
 calls the  \link[AnnotationHub]{query} method of an
 \link[ExperimentHub]{ExperimentHub} 
 objectquery and returns the local filenames.
-Of note: for proprietary reasons, a symbolic link is set to the cached files.
-The overall file size is
+Of note: for proprietary reasons, a \link[base]{file.link} is
+set to the cached files. The overall file size is 285MB.
 }
 \examples{
 library(ExperimentHub)
