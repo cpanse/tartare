@@ -2,11 +2,11 @@
 
 
 library("testthat")
-library("tartare")
+#library("tartare")
 
 library("tools")
 
 library("ExperimentHub")
 
 
-test_check("md5")
+test_check("tartare")

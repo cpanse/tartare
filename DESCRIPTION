@@ -2,7 +2,7 @@ Package: tartare
 Type: Package
 Title: Raw ground spectra recorded on Thermo Fisher Scientific mass
     spectrometers
-Version: 0.99.8
+Version: 0.99.9
 Authors@R: c(person(given = "Christian", family = "Panse",
     email = "cp@fgcz.ethz.ch", role = c("aut", "cre"),
     comment = c(ORCID = "0000-0003-1975-3064")),
@@ -38,4 +38,5 @@ RoxygenNote: 6.1.1
 License: GPL-3
 VignetteBuilder: knitr
 Collate: 
-    'zzz.R'
+    tartare.R
+    zzz.R

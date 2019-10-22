@@ -1,6 +1,20 @@
 # tartare
-raw file collection recorded on Thermo Fisher Scientific mass spectrometers for extented unit testing
 
+raw file collection recorded on Thermo Fisher Scientific mass spectrometers for
+extented unit testing
+
+
+## install 
+
+```
+# Release (3.10) 
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("tartare", version="devel")
+```
+
+see also https://bioconductor.org/packages/tartare/
 
 ## requires
 
@@ -36,7 +50,8 @@ be
 
 ## Not run: 
 
-hfx.filename <- .query(eh, c('tartar', '20190710_003_PierceHeLaProteinDigestStd.raw'))
+hfx.filename <- .query(eh,
+    c('tartar', '20190710_003_PierceHeLaProteinDigestStd.raw'))
 x <- .cnew ("Rawfile", hfx.filename)
 x$GetInfoValues()
 
