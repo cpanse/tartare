@@ -14,13 +14,13 @@ getFilename(eh, query = c("tartare"))
 \code{c('tartar', '20190710_003_PierceHeLaProteinDigestStd.raw')}}
 }
 \value{
-returns file contained in the tartare package
+returns file(s) contained in the tartare package.
 }
 \description{
-calls the \link[AnnotationHub]{query} method of an
-\link[ExperimentHub]{ExperimentHub} 
-objectquery and returns the local filenames.
-Of note: for proprietary reasons, a \link[base]{file.link} is
+calls the \code{\link{query}} method of an
+\code{\link{ExperimentHub}}
+object query and returns the local filenames.
+Of note: for proprietary reasons, a \code{\link{file.link}} is
 set to the cached files.
 It seems that the New RawfileReader .Net library is only accepting files
 ending with raw.
@@ -48,11 +48,12 @@ hfx.filename <- .query(eh, c('tartar', '20190710_003_PierceHeLaProteinDigestStd.
 x <- .cnew ("Rawfile", hfx.filename)
 x$GetInfoValues()
 }
+
 }
 \seealso{
 \itemize{
 \item {\code{browseVignettes('tartare')}}
-\item {\link[AnnotationHub]{query}}
+\item {\code{\link{query}}}
 }
 }
 \author{

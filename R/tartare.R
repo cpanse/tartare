@@ -1,12 +1,11 @@
 #R
 
-
 #' downloads files from aws storage and returns local filepath
 #'
-#' calls the \link[AnnotationHub]{query} method of an
-#' \link[ExperimentHub]{ExperimentHub} 
-#' objectquery and returns the local filenames.
-#' Of note: for proprietary reasons, a \link[base]{file.link} is
+#' calls the \code{\link{query}} method of an
+#' \code{\link{ExperimentHub}}
+#' object query and returns the local filenames.
+#' Of note: for proprietary reasons, a \code{\link{file.link}} is
 #' set to the cached files.
 #' It seems that the New RawfileReader .Net library is only accepting files
 #' ending with raw.
@@ -15,7 +14,7 @@
 #' @param query a query string, e.g.,
 #' \code{c('tartar', '20190710_003_PierceHeLaProteinDigestStd.raw')}
 #' @importFrom AnnotationHub query
-#' @return returns file contained in the tartare package
+#' @return returns file(s) contained in the tartare package.
 #' @export getFilename
 #' @author Christian Panse <cp@fgcz.ethz.ch>, 2019-10
 #' @aliases tartare
@@ -42,10 +41,11 @@
 #' x <- .cnew ("Rawfile", hfx.filename)
 #' x$GetInfoValues()
 #' }
+#' 
 #' @seealso 
 #' \itemize{
 #' \item {\code{browseVignettes('tartare')}}
-#' \item {\link[AnnotationHub]{query}}
+#' \item {\code{\link{query}}}
 #' }
 getFilename <- function(eh, query=c("tartare")){
     res <- query(eh, query)
