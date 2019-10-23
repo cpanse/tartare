@@ -116,16 +116,24 @@ SerialNumber:	FSN20583
 
 
 R> 
-
 ```
 
-## Not run: 
-
-hfx.filename <- .query(eh,
-    c('tartar', '20190710_003_PierceHeLaProteinDigestStd.raw'))
-x <- .cnew ("Rawfile", hfx.filename)
+```
+hfx.filename <- getFilename(eh, c('tartar', '20190710_003_PierceHeLaProteinDigestStd.raw'));
+x <- .cnew ("Rawfile", hfx.filename);
 x$GetInfoValues()
-
-## End(Not run)
+```
 
 ```
+see ?tartare and browseVignettes('tartare') for documentation
+downloading 0 resources
+loading from cache
+[1] "/Users/cp/Library/Caches/ExperimentHub/203c576b7cbf_3236.raw"
+[2] "7/11/2019 11:04:01 AM"                                       
+[3] "1"                                                           
+[4] "1877"                                                        
+[5] "Q Exactive HF-X Orbitrap"                                    
+[6] "Q Exactive HF-X Orbitrap"                                    
+[7] "Exactive Series slot #6114"       
+```
+
