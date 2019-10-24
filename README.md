@@ -25,7 +25,7 @@ the following usage example requires the following packages:
 
 
 ![schema](https://raw.githubusercontent.com/jorainer/swemsa_2019/master/images/Spectra-backends-02.png)
-by courtesy of [@jorainer](https://github.com/jorainer) [10.5281/zenodo.3499649](https://doi.org/10.5281/zenodo.3499649).
+Courtesy of [@jorainer](https://github.com/jorainer); SWEMSA 2019 conference in Erding, Germany [10.5281/zenodo.3499649](https://doi.org/10.5281/zenodo.3499649).
 
 
 
