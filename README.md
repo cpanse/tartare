@@ -24,7 +24,7 @@ the following usage example requires the following packages:
 2. https://github.com/cpanse/MsBackendRawFileReader
 
 
-![schema](https://user-images.githubusercontent.com/4901987/67311128-4a2fdf80-f4ff-11e9-8db2-49340d69f563.jpg)
+![schema](https://raw.githubusercontent.com/jorainer/swemsa_2019/master/images/Spectra-backends-02.png)
 by courtesy of [@jorainer](https://github.com/jorainer)
 
 
