@@ -3,6 +3,7 @@
 raw file collection recorded on Thermo Fisher Scientific mass spectrometers for
 extented unit testing
 
+https://github.com/Bioconductor/Contributions/issues/1286
 
 ## install 
 
